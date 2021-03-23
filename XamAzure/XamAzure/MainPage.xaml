@@ -5,22 +5,21 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Welcome to XamAzure" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Preleva JSon da Azure e lo visualizza" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Utilizza un plugin di Visual Studio per pubblicare durante il debug. Maggiori info al link seguente." FontSize="16" Padding="30,0,30,0"/>
         <Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>
                     <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                        <Span Text="https://marketplace.visualstudio.com/items?itemName=vs-publisher-1448185.ConveyorbyKeyoti" FontAttributes="Bold"/>
                     </FormattedString.Spans>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
         
-        <Button Text="Go!" Clicked="Button_Clicked"></Button>
+        <Button Text="Leggi i dati" Clicked="Button_Clicked"></Button>
 
         <ListView x:Name="lvStudenti" HasUnevenRows="true">
             <ListView.ItemTemplate>
@@ -28,15 +27,19 @@
                     <!--<TextCell Text="{Binding Nome}" Detail="{Binding Cognome}" />-->
                     <!--<ImageCell Text="{Binding Nome}" Detail="{Binding Cognome}" ImageSource="{Binding Immagine}"></ImageCell>-->
                     <ViewCell>
-                        <StackLayout>
+                        <StackLayout Orientation="Horizontal">
                             <Image Source="{Binding Immagine}"
                                 WidthRequest="100"   HeightRequest="100"
                                 HorizontalOptions="Start" VerticalOptions="Center">
                                 
                                 <Image.Clip>
-                                    <EllipseGeometry Center="30,30" RadiusX="50" RadiusY="50"/>
+                                    <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50"/>
                                 </Image.Clip>
                             </Image>
+                            <StackLayout VerticalOptions="Center" Orientation="Horizontal">
+                                <Label Text="{Binding Nome}"></Label>
+                                <Label Text="{Binding Cognome}"></Label>
+                            </StackLayout>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
