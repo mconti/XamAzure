@@ -21,11 +21,24 @@
         </Label>
         
         <Button Text="Go!" Clicked="Button_Clicked"></Button>
-        
-        <ListView x:Name="lvStudenti">
+
+        <ListView x:Name="lvStudenti" HasUnevenRows="true">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Nome}" Detail="{Binding Cognome}" />
+                    <!--<TextCell Text="{Binding Nome}" Detail="{Binding Cognome}" />-->
+                    <!--<ImageCell Text="{Binding Nome}" Detail="{Binding Cognome}" ImageSource="{Binding Immagine}"></ImageCell>-->
+                    <ViewCell>
+                        <StackLayout>
+                            <Image Source="{Binding Immagine}"
+                                WidthRequest="100"   HeightRequest="100"
+                                HorizontalOptions="Start" VerticalOptions="Center">
+                                
+                                <Image.Clip>
+                                    <EllipseGeometry Center="30,30" RadiusX="50" RadiusY="50"/>
+                                </Image.Clip>
+                            </Image>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
