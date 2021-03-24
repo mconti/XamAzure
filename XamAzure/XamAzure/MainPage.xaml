@@ -24,8 +24,6 @@
         <ListView x:Name="lvStudenti" HasUnevenRows="true">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <!--<TextCell Text="{Binding Nome}" Detail="{Binding Cognome}" />-->
-                    <!--<ImageCell Text="{Binding Nome}" Detail="{Binding Cognome}" ImageSource="{Binding Immagine}"></ImageCell>-->
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
                             <Image Source="{Binding Immagine}"

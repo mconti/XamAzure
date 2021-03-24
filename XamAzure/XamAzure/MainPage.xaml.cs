@@ -27,15 +27,16 @@ namespace XamAzure
             {
                 HttpClient client = new HttpClient();
 
-                //string response = await client.GetStringAsync("https://flr.azurewebsites.net/studenti");
+                string response = await client.GetStringAsync("https://flr.azurewebsites.net/studenti");
                 //string response = await client.GetStringAsync("https://192.168.0.100:45455/studenti");
-                string response = await client.GetStringAsync("https://xamazureapi.conveyor.cloud/studenti");
+                //string response = await client.GetStringAsync("https://xamazureapi.conveyor.cloud/studenti");
                 studenti = JsonConvert.DeserializeObject<List<Studente>>(response);
             }
             catch (Exception err)
             {
                 await DisplayAlert("Ocio!!", err.Message, "Ok");
             }
+
             lvStudenti.ItemsSource = studenti;
         }
     }
