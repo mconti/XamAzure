@@ -18,6 +18,7 @@ namespace XamAzureApi.Controllers
             List<Studente> studenti = new List<Studente>();
             studenti.Add(new Studente { Nome = "Maurizio", Cognome = "Conti", Avatar = "maurizio.conti.png", EMail = "maurizio.conti@ittsrimini.edu.it" });
             studenti.Add(new Studente { Nome = "Fabio", Cognome = "Corbelli", Avatar = "fabio.corbelli.png", EMail = "fabio.corbelli@ittsrimini.edu.it" });
+            studenti.Add(new Studente { Nome = "Riccardo", Cognome = "Bianchi", Avatar = "riccardo.bianchi.png", EMail = "riccardo.bianchi@ittsrimini.edu.it" });
 
             return studenti;
         }
