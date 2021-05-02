@@ -7,7 +7,7 @@
 
 *Attenzione: manca la parte di autenticazione...*
 
-_Si pensa di utilizzre il framework .NET Identity_
+_Si pensa di utilizzare il framework .NET Identity_
 
 **Versione beta**
 
