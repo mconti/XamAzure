@@ -2,6 +2,8 @@
 # XamAzure
 ### La più semplice WebApi Azure con la più semplice App Xamarin che la usa, per partire.
 
+[vai alla home del FabLab...](http://www.fablabromagna.org)
+
 ![immagine immagine](images/Home.png)
 
 
