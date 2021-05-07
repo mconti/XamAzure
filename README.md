@@ -1,5 +1,5 @@
 
-# XamAzure
+# XamAzure App
 ### La più semplice WebApi Azure con la più semplice App Xamarin che la usa, per partire.
 
 [Vai al FabLab...](http://www.fablabromagna.org)
