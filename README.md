@@ -1,6 +1,6 @@
 
 # XamAzure App
-### La più semplice WebApi Azure con la più semplice App Xamarin che la usa, per partire.
+### La più semplice WebApi Azure con la più semplice App Xamarin che la usa, per partire con un progetto semplice Xamain ed una webApi su Azure.
 
 [Vai al FabLab...](http://www.fablabromagna.org)
 
